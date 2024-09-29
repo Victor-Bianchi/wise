@@ -1,0 +1,168 @@
+@import '_variables';
+
+// GLOBAL CONFIG
+
+.container {
+  display: block;
+  width: 100%;
+}
+
+// AUTHENTICATION MODULE
+
+.container-authentication {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-logo {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: $white;
+  text-transform: uppercase;
+  border: 2px solid $black;
+
+  & > h1 {
+    font-family: $jetbrains;
+  }
+}
+
+.authentication-form {
+  width: 100%;
+  min-height: 40%;
+  padding: 2%;
+  background-color: $white;
+  border: 2px solid $black;
+
+  .title {
+    margin-bottom: 20px;
+    text-align: center;
+
+    & > h1 {
+      font-size: 1.8rem;
+      color: $indigo_blue;
+      font-family: $jetbrains;
+    }
+
+    & > span {
+      font-size: 1rem;
+      color: $black;
+      font-family: $roboto;
+    }
+  }
+
+  .authentication-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    .flex {
+      width: 100%;
+      align-content: center;
+      justify-content: space-between;
+
+      & > div {
+        width: 49%;
+        display: flex;
+        flex-wrap: wrap;
+
+        & > * {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        &>label {
+          font-size: 0.9rem;
+        }
+
+        & > input {
+          padding: 10px;
+          border: 1px solid $silver;
+        }
+
+        & > input:focus {
+          outline: none;
+          border: 1px solid $indigo_blue;
+        }
+      }
+    }
+
+    & > * {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    & > label {
+      font-size: 0.9rem;
+    }
+
+    & > input {
+      padding: 10px;
+      border: 1px solid $silver;
+    }
+
+    & > input:focus {
+      outline: none;
+      border: 1px solid $indigo_blue;
+    }
+
+    & > small {
+      width: auto;
+      margin-bottom: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: $indigo_blue;
+        font-weight: $bold;
+      }
+    }
+  }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  & > * {
+    width: 100%;
+  }
+
+  &>small {
+    width: auto;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: $indigo_blue;
+      font-weight: $bold;
+    }
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid $silver;
+    transition: 0.3s;
+    background-color: $apple-gray;
+    font-family: $jetbrains;
+
+    &:hover {
+      color: white;
+      border: 1px solid transparent;
+      background-color: $indigo_blue;
+    }
+  }
+  }
+}

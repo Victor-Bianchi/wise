@@ -1,0 +1,22 @@
+<div class="container-authentication">
+  <div class="card-logo">
+    <h1>WISE</h1>
+  </div>
+  <div class="authentication-form">
+    <div class="title">
+      <h1>Recuperação da Conta</h1>
+      <span>Insira seu e-mail para receber o código de recuperação</span>
+    </div>
+      <form method="post">
+        <div class="authentication-inputs">
+          <label for="email">E-mail</label>
+          <input [(ngModel)]="model.email" type="email" id="email" name="email" placeholder="usuario@email.com" required>
+        </div>
+      </form>
+      <div class="footer">
+        <button class="btn btn-main" (click)="sendEmail()">Enviar</button>
+      </div>
+  </div>
+</div>
+
+
